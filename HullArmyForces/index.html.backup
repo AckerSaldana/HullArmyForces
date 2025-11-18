@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hull Armed Force Forum - Supporting Armed Forces members transition to civilian life in Hull, UK. Comprehensive resources, 70+ organizations united.">
+    <meta name="keywords" content="veterans support, armed forces, Hull, military transition, veteran resources">
+    <title>Hull Armed Force Forum - Support That Stays</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet (imports all modular CSS) -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M16 2L6 8V14C6 21 10.5 27.5 16 30C21.5 27.5 26 21 26 14V8L16 2Z" stroke="#c9a961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <path d="M16 10V18M12 14H20" stroke="#c9a961" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-text">HAFF</span>
+            </div>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Support Services</a></li>
+                <li><a href="#resources" class="nav-link">Resources</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#support" class="btn btn-ghost">Get Support</a>
+                <a href="#emergency" class="btn btn-primary">Emergency Help</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" role="banner">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1607863680198-23d4b2565df0?q=80&w=2070&auto=format&fit=crop" alt="Veterans gathering in support" class="hero-image">
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-corner hero-corner-left">
+                <span class="hero-corner-text">SERVING HULL'S ARMED FORCES</span>
+            </div>
+
+            <div class="hero-corner hero-corner-right">
+                <span class="hero-corner-text">70+ ORGANISATIONS UNITED</span>
+            </div>
+
+            <h1 class="hero-title">
+                SUPPORT<br>THAT STAYS
+            </h1>
+
+            <div class="hero-footer">
+                <div class="hero-description">
+                    <p>At Hull Armed Force Forum, every transition is supported with dignity and every challenge is met with comprehensive resources. We bring together the strength of 70+ organizations, the dedication of our community, and the promise of a brighter civilian future.</p>
+                </div>
+
+                <div class="hero-trust-badge">
+                    <div class="trust-content">
+                        <div class="trust-stars" aria-label="5 star rating">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="#c9a961" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0l2.5 6.5L19 7.5l-4.5 4.5L15.5 19 10 15.5 4.5 19l1-7L1 7.5l6.5-1L10 0z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="#c9a961" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0l2.5 6.5L19 7.5l-4.5 4.5L15.5 19 10 15.5 4.5 19l1-7L1 7.5l6.5-1L10 0z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="#c9a961" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0l2.5 6.5L19 7.5l-4.5 4.5L15.5 19 10 15.5 4.5 19l1-7L1 7.5l6.5-1L10 0z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="#c9a961" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0l2.5 6.5L19 7.5l-4.5 4.5L15.5 19 10 15.5 4.5 19l1-7L1 7.5l6.5-1L10 0z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="#c9a961" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0l2.5 6.5L19 7.5l-4.5 4.5L15.5 19 10 15.5 4.5 19l1-7L1 7.5l6.5-1L10 0z"/>
+                            </svg>
+                        </div>
+                        <div class="trust-rating">4.9/5</div>
+                        <div class="trust-text">Trusted by 1,500+ Veterans</div>
+                        <div class="trust-subtext">Based on 1,247 reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="quick-access" id="quick-access">
+        <div class="container">
+            <div class="quick-access-grid">
+                <article class="quick-card">
+                    <div class="quick-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12V6L14 16H24V30L34 20H24Z" stroke="#c9a961" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 18H6C5 18 4 19 4 20V40C4 41 5 42 6 42H42C43 42 44 41 44 40V20C44 19 43 18 42 18H38" stroke="#c9a961" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="quick-title">Housing & Accommodation</h3>
+                    <p class="quick-description">Find secure housing options and accommodation support for you and your family.</p>
+                </article>
+
+                <article class="quick-card">
+                    <div class="quick-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="18" stroke="#c9a961" stroke-width="2.5"/>
+                            <path d="M24 14V24L30 30" stroke="#c9a961" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M17 11C14 13 12 17 12 21" stroke="#c9a961" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="quick-title">Healthcare & Wellbeing</h3>
+                    <p class="quick-description">Access mental health services, medical support, and wellness programs tailored for veterans.</p>
+                </article>
+
+                <article class="quick-card">
+                    <div class="quick-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="14" width="36" height="24" rx="2" stroke="#c9a961" stroke-width="2.5"/>
+                            <path d="M14 14V10C14 8 15 6 17 6H31C33 6 34 8 34 10V14" stroke="#c9a961" stroke-width="2.5"/>
+                            <path d="M24 22V30M20 26H28" stroke="#c9a961" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="quick-title">Employment & Training</h3>
+                    <p class="quick-description">Career guidance, job opportunities, and skills training for civilian employment.</p>
+                </article>
+
+                <article class="quick-card">
+                    <div class="quick-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18" cy="14" r="6" stroke="#c9a961" stroke-width="2.5"/>
+                            <circle cx="32" cy="20" r="5" stroke="#c9a961" stroke-width="2.5"/>
+                            <path d="M10 38C10 32 14 28 18 28C22 28 26 32 26 38" stroke="#c9a961" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M26 40C26 36 28 32 32 32C36 32 38 36 38 40" stroke="#c9a961" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="quick-title">Community Support</h3>
+                    <p class="quick-description">Connect with fellow veterans and join a supportive community network.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Comprehensive Support</h2>
+                <p class="section-subtitle">From transition to thriving</p>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 35C28.2843 35 35 28.2843 35 20C35 11.7157 28.2843 5 20 5C11.7157 5 5 11.7157 5 20C5 28.2843 11.7157 35 20 35Z" stroke="#c9a961" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 25C22.7614 25 25 22.7614 25 20C25 17.2386 22.7614 15 20 15C17.2386 15 15 17.2386 15 20C15 22.7614 17.2386 25 20 25Z" stroke="#c9a961" stroke-width="2"/>
+                            <path d="M20 10V15M20 25V30M10 20H15M25 20H30" stroke="#c9a961" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Mental Health Support</h3>
+                    <p class="service-description">Professional counseling, PTSD treatment, and mental wellness programs designed specifically for veterans.</p>
+                    <a href="#mental-health" class="service-link">Explore <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8L20 3L28 8V16C28 23 24 29 20 31C16 29 12 23 12 16V8Z" stroke="#c9a961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 18L19 21L24 16" stroke="#c9a961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Career Guidance</h3>
+                    <p class="service-description">Expert advice on translating military skills to civilian careers, CV writing, and interview preparation.</p>
+                    <a href="#career" class="service-link">Explore <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="12" width="28" height="20" rx="2" stroke="#c9a961" stroke-width="2"/>
+                            <path d="M14 12V10C14 8.89543 14.8954 8 16 8H24C25.1046 8 26 8.89543 26 10V12" stroke="#c9a961" stroke-width="2"/>
+                            <circle cx="20" cy="22" r="3" stroke="#c9a961" stroke-width="2"/>
+                            <path d="M26 32V28C26 25.7909 24.2091 24 22 24H18C15.7909 24 14 25.7909 14 28V32" stroke="#c9a961" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Financial Assistance</h3>
+                    <p class="service-description">Access grants, benefits advice, debt management, and financial planning services.</p>
+                    <a href="#financial" class="service-link">Explore <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="12" r="5" stroke="#c9a961" stroke-width="2"/>
+                            <circle cx="26" cy="12" r="5" stroke="#c9a961" stroke-width="2"/>
+                            <circle cx="14" cy="28" r="5" stroke="#c9a961" stroke-width="2"/>
+                            <circle cx="26" cy="28" r="5" stroke="#c9a961" stroke-width="2"/>
+                            <path d="M17 15L23 22M23 15L17 22" stroke="#c9a961" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Family Services</h3>
+                    <p class="service-description">Support for spouses, children, and dependents through every stage of transition.</p>
+                    <a href="#family" class="service-link">Explore <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="8" width="24" height="28" rx="2" stroke="#c9a961" stroke-width="2"/>
+                            <path d="M14 16H26M14 22H26M14 28H22" stroke="#c9a961" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 8V4" stroke="#c9a961" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Legal Advice</h3>
+                    <p class="service-description">Free legal consultation on housing, employment, benefits, and other civilian matters.</p>
+                    <a href="#legal" class="service-link">Explore <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="15" stroke="#c9a961" stroke-width="2"/>
+                            <path d="M15 20L18 23L25 16" stroke="#c9a961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="30" cy="10" r="5" stroke="#c9a961" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Social Programs</h3>
+                    <p class="service-description">Join social events, sports activities, and community gatherings to build lasting connections.</p>
+                    <a href="#social" class="service-link">Explore <span aria-hidden="true">→</span></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Serve Section -->
+    <section class="who-we-serve" id="about">
+        <div class="container">
+            <div class="who-grid">
+                <div class="who-image">
+                    <img src="https://images.unsplash.com/photo-1556484687-30636164638b?q=80&w=1974&auto=format&fit=crop" alt="Veterans working together in community" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+
+                <div class="who-content">
+                    <h2 class="who-title">Your Journey, Our Mission</h2>
+                    <p class="who-description">
+                        Hull Armed Force Forum is dedicated to ensuring no veteran faces transition alone. We unite over 70 organizations across Hull to provide seamless, comprehensive support that addresses every aspect of civilian life.
+                    </p>
+                    <p class="who-description">
+                        Whether you're preparing for discharge, recently transitioned, or have been a civilian for years, our door is always open.
+                    </p>
+
+                    <ul class="who-list">
+                        <li class="who-list-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M5 10L9 14L15 6" stroke="#c9a961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Active service members preparing for transition</span>
+                        </li>
+                        <li class="who-list-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M5 10L9 14L15 6" stroke="#c9a961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Recently discharged veterans</span>
+                        </li>
+                        <li class="who-list-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M5 10L9 14L15 6" stroke="#c9a961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Family members and dependents</span>
+                        </li>
+                        <li class="who-list-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M5 10L9 14L15 6" stroke="#c9a961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Veterans seeking continued support</span>
+                        </li>
+                    </ul>
+
+                    <a href="#contact" class="btn btn-primary">Connect With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Updates Section -->
+    <section class="updates" id="resources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Updates & Resources</h2>
+                <p class="section-subtitle">Stay informed with news, guides, and opportunities</p>
+            </div>
+
+            <div class="updates-grid">
+                <article class="update-card">
+                    <div class="update-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" alt="Career workshop event" loading="lazy">
+                    </div>
+                    <div class="update-content">
+                        <time class="update-date" datetime="2025-11-10">November 10, 2025</time>
+                        <h3 class="update-title">New Career Workshop Series Launches January 2026</h3>
+                        <p class="update-excerpt">Join our comprehensive 6-week program designed to help veterans transition their military experience into civilian career success.</p>
+                        <a href="#update-1" class="update-link">Read more <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="update-card">
+                    <div class="update-image">
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2070&auto=format&fit=crop" alt="Housing support program" loading="lazy">
+                    </div>
+                    <div class="update-content">
+                        <time class="update-date" datetime="2025-11-05">November 5, 2025</time>
+                        <h3 class="update-title">Expanded Housing Support: 50 New Partnerships</h3>
+                        <p class="update-excerpt">We've partnered with local housing associations to provide priority access to quality accommodation for veterans and their families.</p>
+                        <a href="#update-2" class="update-link">Read more <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="update-card">
+                    <div class="update-image">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2132&auto=format&fit=crop" alt="Mental health awareness" loading="lazy">
+                    </div>
+                    <div class="update-content">
+                        <time class="update-date" datetime="2025-10-28">October 28, 2025</time>
+                        <h3 class="update-title">Mental Health First Aid Training for Veterans</h3>
+                        <p class="update-excerpt">Learn to recognize and respond to mental health challenges. Free training available for all veterans and their immediate family members.</p>
+                        <a href="#update-3" class="update-link">Read more <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Support Section -->
+    <section class="emergency" id="emergency">
+        <div class="container">
+            <div class="emergency-content">
+                <h2 class="emergency-title">Need Immediate Support?</h2>
+                <p class="emergency-subtitle">We're here 24/7</p>
+
+                <div class="emergency-options">
+                    <div class="emergency-option">
+                        <h3 class="emergency-option-title">Crisis Helpline</h3>
+                        <a href="tel:0800XXXXXXX" class="emergency-phone">0800 XXX XXXX</a>
+                        <p class="emergency-option-desc">Available 24 hours a day, 7 days a week</p>
+                    </div>
+
+                    <div class="emergency-divider" aria-hidden="true"></div>
+
+                    <div class="emergency-option">
+                        <h3 class="emergency-option-title">Mental Health Support</h3>
+                        <a href="#mental-health-crisis" class="btn btn-outline-light">Access Support Now</a>
+                        <p class="emergency-option-desc">Immediate assistance for mental health emergencies</p>
+                    </div>
+
+                    <div class="emergency-divider" aria-hidden="true"></div>
+
+                    <div class="emergency-option">
+                        <h3 class="emergency-option-title">Emergency Resources</h3>
+                        <a href="#resources-emergency" class="emergency-link">View All Resources <span aria-hidden="true">→</span></a>
+                        <p class="emergency-option-desc">Quick access to urgent support services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-top"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M16 2L6 8V14C6 21 10.5 27.5 16 30C21.5 27.5 26 21 26 14V8L16 2Z" stroke="#c9a961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M16 10V18M12 14H20" stroke="#c9a961" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="logo-text">HAFF</span>
+                    </div>
+                    <p class="footer-about">
+                        Hull Armed Force Forum brings together over 70 organizations to provide comprehensive support for Armed Forces members transitioning to civilian life.
+                    </p>
+                    <p class="footer-tagline">Support that lasts.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Support Services</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#partners">Our Partners</a></li>
+                        <li><a href="#news">News & Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <strong>Address:</strong><br>
+                            123 Support Street<br>
+                            Hull, HU1 1XX
+                        </li>
+                        <li>
+                            <strong>Phone:</strong><br>
+                            <a href="tel:01482XXXXXX">01482 XXX XXX</a>
+                        </li>
+                        <li>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:info@haff.org.uk">info@haff.org.uk</a>
+                        </li>
+                        <li>
+                            <strong>Hours:</strong><br>
+                            Mon-Fri: 9:00 AM - 5:00 PM
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <div class="footer-social">
+                        <a href="#facebook" class="social-link" aria-label="Follow us on Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#twitter" class="social-link" aria-label="Follow us on Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#linkedin" class="social-link" aria-label="Follow us on LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#instagram" class="social-link" aria-label="Follow us on Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="footer-newsletter-text">Stay updated with our newsletter</p>
+                    <form class="newsletter-form" aria-label="Newsletter signup">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" aria-label="Email address" required>
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2025 Hull Armed Force Forum. All rights reserved.
+                </p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <span class="footer-separator">|</span>
+                    <a href="#terms">Terms of Service</a>
+                    <span class="footer-separator">|</span>
+                    <a href="#accessibility">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

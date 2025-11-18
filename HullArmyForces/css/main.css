@@ -1,0 +1,134 @@
+/**
+ * Main CSS Entry Point
+ * Hull Armed Force Forum
+ *
+ * This file imports all modular CSS files in the correct order
+ */
+
+/* ===================================
+   1. FOUNDATION
+   =================================== */
+
+/* CSS Reset & Base Styles */
+@import url('reset.css');
+
+/* CSS Custom Properties (Variables) */
+@import url('variables.css');
+
+/* Typography Styles */
+@import url('typography.css');
+
+/* ===================================
+   1.5. COMPATIBILITY LAYER
+   =================================== */
+
+/* Compatibility layer for old class names */
+@import url('compatibility.css');
+
+/* ===================================
+   2. COMPONENTS
+   =================================== */
+
+/* Navigation */
+@import url('components/navigation.css');
+
+/* Hero Section */
+@import url('components/hero.css');
+
+/* Buttons */
+@import url('components/buttons.css');
+
+/* Cards */
+@import url('components/cards.css');
+
+/* Footer */
+@import url('components/footer.css');
+
+/* Back to Top Button */
+@import url('components/back-to-top.css');
+
+/* ===================================
+   3. SECTIONS
+   =================================== */
+
+/* Quick Access Section */
+@import url('sections/quick-access.css');
+
+/* Services Section */
+@import url('sections/services.css');
+
+/* Who We Serve Section */
+@import url('sections/who-we-serve.css');
+
+/* Updates/News Section */
+@import url('sections/updates.css');
+
+/* Emergency Support Section */
+@import url('sections/emergency.css');
+
+/* ===================================
+   4. UTILITIES
+   =================================== */
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Fade-in class for scroll animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================================
+   5. PRINT STYLES
+   =================================== */
+
+@media print {
+  .navbar,
+  .hero__scroll-indicator,
+  .back-to-top {
+    display: none;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+  }
+}

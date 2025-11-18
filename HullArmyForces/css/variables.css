@@ -1,0 +1,164 @@
+/**
+ * CSS Custom Properties - Design Tokens
+ * Hull Armed Force Forum
+ */
+
+:root {
+  /* ===================================
+     COLOR PALETTE
+     =================================== */
+
+  /* Primary Colors */
+  --color-charcoal-deep: #2a2420;
+  --color-charcoal-warm: #3d3530;
+  --color-brown-rich: #5c4a3a;
+
+  /* Accent Colors */
+  --color-gold-antique: #c9a961;
+  --color-gold-warm: #d4a574;
+  --color-cream-soft: #f5ede1;
+
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-cream-warm: #fef9f3;
+  --color-beige-light: #e8dcc8;
+  --color-grey-medium: #9b8b7e;
+
+  /* Trust/Action Colors */
+  --color-navy: #2d4356;
+  --color-success: #5a7a5a;
+
+  /* ===================================
+     TYPOGRAPHY
+     =================================== */
+
+  /* Font Families */
+  --font-display: 'Playfair Display', serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Hero Typography */
+  --hero-display-size: 120px;
+  --hero-display-weight: 700;
+  --hero-display-spacing: 4px;
+  --hero-display-line-height: 1.1;
+
+  --hero-corner-size: 13px;
+  --hero-corner-weight: 500;
+  --hero-corner-spacing: 2.5px;
+
+  --hero-description-size: 16px;
+  --hero-description-line-height: 1.8;
+
+  /* Heading Sizes */
+  --h1-size: 48px;
+  --h1-weight: 600;
+
+  --h2-size: 36px;
+  --h2-weight: 600;
+
+  --h3-size: 24px;
+  --h3-weight: 600;
+
+  /* Body Typography */
+  --body-size: 16px;
+  --body-large-size: 18px;
+  --body-small-size: 14px;
+  --body-line-height: 1.7;
+
+  /* ===================================
+     SPACING SYSTEM
+     =================================== */
+
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 40px;
+  --spacing-xl: 60px;
+  --spacing-2xl: 80px;
+  --spacing-3xl: 100px;
+
+  /* Hero Specific Spacing */
+  --hero-corner-top: 180px;
+  --hero-corner-side: 40px;
+  --hero-bottom-spacing: 60px;
+
+  /* ===================================
+     LAYOUT
+     =================================== */
+
+  --nav-height: 80px;
+  --max-content-width: 1400px;
+  --max-text-width: 800px;
+  --card-max-width: 380px;
+
+  /* ===================================
+     EFFECTS
+     =================================== */
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.3);
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* ===================================
+     Z-INDEX SCALE
+     =================================== */
+
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-overlay: 900;
+  --z-modal: 1000;
+  --z-toast: 2000;
+}
+
+/* ===================================
+   RESPONSIVE BREAKPOINTS
+   =================================== */
+
+/* Mobile First Approach */
+/* Small devices (phones, less than 768px) - default */
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 968px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (max-width: 768px) {
+  :root {
+    --hero-display-size: 56px;
+    --hero-display-spacing: 2px;
+    --hero-corner-size: 11px;
+    --hero-corner-top: 100px;
+    --hero-corner-side: 20px;
+    --hero-bottom-spacing: 30px;
+
+    --h1-size: 36px;
+    --h2-size: 28px;
+    --h3-size: 20px;
+
+    --spacing-lg: 24px;
+    --spacing-xl: 40px;
+    --spacing-2xl: 60px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 968px) {
+  :root {
+    --hero-display-size: 80px;
+    --hero-display-spacing: 3px;
+    --hero-corner-top: 140px;
+    --hero-corner-side: 30px;
+  }
+}

@@ -1,0 +1,221 @@
+/**
+ * Navigation Component
+ * Hull Armed Force Forum
+ */
+
+/* ===================================
+   NAVIGATION CONTAINER
+   =================================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--color-charcoal-deep);
+  z-index: var(--z-sticky);
+  transition: all var(--transition-base);
+  border-bottom: 1px solid rgba(201, 169, 97, 0.1);
+}
+
+.navbar.scrolled {
+  background-color: rgba(42, 36, 32, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ===================================
+   NAVIGATION LAYOUT
+   =================================== */
+
+.nav__container {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 20px var(--hero-corner-side);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+/* ===================================
+   LOGO - LEFT SIDE
+   =================================== */
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-cream-warm);
+  text-decoration: none;
+}
+
+.logo__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.logo__text {
+  letter-spacing: 2px;
+}
+
+/* ===================================
+   NAVIGATION MENU - CENTER
+   =================================== */
+
+.nav__menu {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.nav__link {
+  position: relative;
+  color: var(--color-cream-warm);
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 16px;
+  transition: color var(--transition-base);
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--color-gold-antique);
+  transition: width var(--transition-base);
+}
+
+.nav__link:hover,
+.nav__link.active {
+  color: var(--color-gold-antique);
+}
+
+.nav__link:hover::after,
+.nav__link.active::after {
+  width: 60%;
+}
+
+/* ===================================
+   NAVIGATION ACTIONS - RIGHT SIDE
+   =================================== */
+
+.nav__actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* ===================================
+   MOBILE MENU TOGGLE
+   =================================== */
+
+.nav__toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav__toggle-line {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-gold-antique);
+  transition: all var(--transition-base);
+}
+
+/* ===================================
+   RESPONSIVE - TABLETS
+   =================================== */
+
+@media (max-width: 968px) {
+  .nav__container {
+    padding: 16px var(--spacing-md);
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: calc(var(--nav-height) - 7px);
+    left: -100%;
+    width: 100%;
+    background-color: rgba(42, 36, 32, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: var(--spacing-md);
+    gap: 0;
+    transition: left var(--transition-base);
+    box-shadow: var(--shadow-lg);
+    max-height: calc(100vh - var(--nav-height));
+    overflow-y: auto;
+  }
+
+  .nav__menu.active {
+    left: 0;
+  }
+
+  .nav__link {
+    width: 100%;
+    padding: 16px;
+    border-bottom: 1px solid rgba(201, 169, 97, 0.1);
+  }
+
+  .nav__link::after {
+    display: none;
+  }
+
+  .nav__actions {
+    margin-top: var(--spacing-sm);
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Hamburger Animation */
+  .nav__toggle.active .nav__toggle-line:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  .nav__toggle.active .nav__toggle-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav__toggle.active .nav__toggle-line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+}
+
+/* ===================================
+   RESPONSIVE - MOBILE
+   =================================== */
+
+@media (max-width: 768px) {
+  .nav__container {
+    padding: 16px var(--spacing-md);
+  }
+
+  .nav__logo {
+    font-size: 20px;
+  }
+
+  .logo__icon {
+    width: 28px;
+    height: 28px;
+  }
+}

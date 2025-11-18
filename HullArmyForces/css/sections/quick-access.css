@@ -1,0 +1,25 @@
+/**
+ * Quick Access Section
+ * Hull Armed Force Forum
+ */
+
+.quick-access {
+  background-color: var(--color-cream-soft);
+  padding: var(--spacing-2xl) 0;
+}
+
+.quick-access__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .quick-access {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .quick-access__grid {
+    grid-template-columns: 1fr;
+  }
+}

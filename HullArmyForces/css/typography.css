@@ -1,0 +1,157 @@
+/**
+ * Typography Styles
+ * Hull Armed Force Forum
+ */
+
+/* ===================================
+   HEADINGS
+   =================================== */
+
+h1,
+.h1 {
+  font-family: var(--font-display);
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+  color: var(--color-cream-warm);
+}
+
+h2,
+.h2 {
+  font-family: var(--font-heading);
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  color: var(--color-cream-warm);
+}
+
+h3,
+.h3 {
+  font-family: var(--font-heading);
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+  color: var(--color-cream-warm);
+}
+
+/* ===================================
+   BODY TEXT
+   =================================== */
+
+.text-large {
+  font-size: var(--body-large-size);
+  line-height: 1.8;
+}
+
+.text-small {
+  font-size: var(--body-small-size);
+}
+
+/* ===================================
+   TEXT ALIGNMENT
+   =================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* ===================================
+   TEXT TRANSFORMS
+   =================================== */
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* ===================================
+   FONT WEIGHTS
+   =================================== */
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* ===================================
+   LETTER SPACING
+   =================================== */
+
+.letter-spacing-tight {
+  letter-spacing: -0.5px;
+}
+
+.letter-spacing-normal {
+  letter-spacing: 0;
+}
+
+.letter-spacing-wide {
+  letter-spacing: 1px;
+}
+
+.letter-spacing-wider {
+  letter-spacing: 2px;
+}
+
+.letter-spacing-widest {
+  letter-spacing: 3px;
+}
+
+/* ===================================
+   TEXT COLORS
+   =================================== */
+
+.text-cream {
+  color: var(--color-cream-warm);
+}
+
+.text-gold {
+  color: var(--color-gold-antique);
+}
+
+.text-charcoal {
+  color: var(--color-charcoal-deep);
+}
+
+.text-brown {
+  color: var(--color-brown-rich);
+}
+
+.text-beige {
+  color: var(--color-beige-light);
+}
+
+/* ===================================
+   LINK STYLES
+   =================================== */
+
+a {
+  transition: color var(--transition-base);
+}
+
+a:hover {
+  color: var(--color-gold-antique);
+}

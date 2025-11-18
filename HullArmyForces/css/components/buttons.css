@@ -1,0 +1,158 @@
+/**
+ * Button Components
+ * Hull Armed Force Forum
+ */
+
+/* ===================================
+   BASE BUTTON STYLES
+   =================================== */
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-gold-antique);
+  outline-offset: 2px;
+}
+
+/* ===================================
+   BUTTON VARIANTS
+   =================================== */
+
+/* Primary Button */
+.btn--primary {
+  background-color: var(--color-gold-antique);
+  color: var(--color-charcoal-deep);
+  border-color: var(--color-gold-antique);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-gold-warm);
+  border-color: var(--color-gold-warm);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(201, 169, 97, 0.3);
+}
+
+.btn--primary:active {
+  transform: translateY(0);
+}
+
+/* Ghost/Outline Button */
+.btn--ghost {
+  background-color: transparent;
+  color: var(--color-cream-soft);
+  border-color: var(--color-cream-soft);
+}
+
+.btn--ghost:hover {
+  background-color: var(--color-cream-soft);
+  color: var(--color-charcoal-deep);
+  transform: translateY(-2px);
+}
+
+.btn--ghost:active {
+  transform: translateY(0);
+}
+
+/* Outline Light Button (for dark backgrounds) */
+.btn--outline-light {
+  background-color: transparent;
+  color: var(--color-cream-warm);
+  border-color: var(--color-cream-warm);
+}
+
+.btn--outline-light:hover {
+  background-color: var(--color-cream-warm);
+  color: var(--color-navy);
+}
+
+/* Secondary Button */
+.btn--secondary {
+  background-color: var(--color-navy);
+  color: var(--color-cream-warm);
+  border-color: var(--color-navy);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-charcoal-warm);
+  border-color: var(--color-charcoal-warm);
+  transform: translateY(-2px);
+}
+
+/* ===================================
+   BUTTON SIZES
+   =================================== */
+
+.btn--small {
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+.btn--large {
+  padding: 16px 36px;
+  font-size: 16px;
+}
+
+/* ===================================
+   BUTTON STATES
+   =================================== */
+
+.btn:disabled,
+.btn--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ===================================
+   BUTTON GROUPS
+   =================================== */
+
+.btn-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-group--vertical {
+  flex-direction: column;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+
+@media (max-width: 968px) {
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .btn--large {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+}

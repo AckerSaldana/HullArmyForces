@@ -1,0 +1,97 @@
+/**
+ * Who We Serve Section
+ * Hull Armed Force Forum
+ */
+
+.who-we-serve {
+  background-color: var(--color-cream-soft);
+  padding: var(--spacing-2xl) 0;
+}
+
+.who-we-serve__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.who-we-serve__image {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.who-we-serve__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.who-we-serve__image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(42, 36, 32, 0.2),
+    rgba(92, 74, 58, 0.3)
+  );
+}
+
+.who-we-serve__content {
+  padding: var(--spacing-md);
+}
+
+.who-we-serve__title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  color: var(--color-charcoal-deep);
+  margin-bottom: var(--spacing-sm);
+}
+
+.who-we-serve__description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--color-brown-rich);
+  margin-bottom: var(--spacing-sm);
+}
+
+.who-we-serve__list {
+  list-style: none;
+  margin: var(--spacing-md) 0;
+}
+
+.who-we-serve__list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 17px;
+  color: var(--color-brown-rich);
+}
+
+.who-we-serve__list-item svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+@media (max-width: 968px) {
+  .who-we-serve__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .who-we-serve__image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .who-we-serve {
+    padding: var(--spacing-xl) 0;
+  }
+}

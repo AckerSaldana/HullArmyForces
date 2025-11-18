@@ -1,0 +1,304 @@
+/**
+ * Hero Section Component
+ * Hull Armed Force Forum
+ */
+
+/* ===================================
+   HERO CONTAINER
+   =================================== */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+/* Background Image & Overlay */
+.hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(42, 36, 32, 0.85),
+    rgba(61, 53, 48, 0.7)
+  );
+  z-index: 2;
+}
+
+/* ===================================
+   HERO CONTENT
+   =================================== */
+
+.hero__content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===================================
+   CORNER TEXT - TOP POSITIONS
+   =================================== */
+
+.hero__corner-left {
+  position: absolute;
+  top: var(--hero-corner-top);
+  left: var(--hero-corner-side);
+  font-family: var(--font-heading);
+  font-size: var(--hero-corner-size);
+  font-weight: var(--hero-corner-weight);
+  color: var(--color-beige-light);
+  text-transform: uppercase;
+  letter-spacing: var(--hero-corner-spacing);
+  z-index: 4;
+}
+
+.hero__corner-right {
+  position: absolute;
+  top: var(--hero-corner-top);
+  right: var(--hero-corner-side);
+  font-family: var(--font-heading);
+  font-size: var(--hero-corner-size);
+  font-weight: var(--hero-corner-weight);
+  color: var(--color-beige-light);
+  text-transform: uppercase;
+  letter-spacing: var(--hero-corner-spacing);
+  z-index: 4;
+}
+
+/* ===================================
+   MAIN HERO TEXT - CENTER
+   =================================== */
+
+.hero__main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-size: var(--hero-display-size);
+  font-weight: var(--hero-display-weight);
+  color: var(--color-cream-warm);
+  text-align: center;
+  letter-spacing: var(--hero-display-spacing);
+  line-height: var(--hero-display-line-height);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 4;
+  white-space: nowrap;
+}
+
+/* ===================================
+   BOTTOM DESCRIPTION - LEFT
+   =================================== */
+
+.hero__description {
+  position: absolute;
+  bottom: var(--hero-bottom-spacing);
+  left: var(--hero-corner-side);
+  max-width: 500px;
+  font-family: var(--font-body);
+  font-size: var(--hero-description-size);
+  line-height: var(--hero-description-line-height);
+  color: var(--color-cream-soft);
+  z-index: 4;
+}
+
+/* ===================================
+   TRUST BADGE - BOTTOM RIGHT
+   =================================== */
+
+.hero__trust-badge {
+  position: absolute;
+  bottom: var(--hero-bottom-spacing);
+  right: var(--hero-corner-side);
+  background-color: rgba(245, 237, 225, 0.95);
+  padding: 24px 32px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  z-index: 4;
+  min-width: 220px;
+}
+
+.trust-badge__stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.trust-badge__stars svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-gold-antique);
+}
+
+.trust-badge__rating {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-charcoal-deep);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.trust-badge__text {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-charcoal-deep);
+  margin-bottom: 4px;
+}
+
+.trust-badge__subtext {
+  font-size: 14px;
+  color: var(--color-grey-medium);
+}
+
+/* ===================================
+   SCROLL INDICATOR
+   =================================== */
+
+.hero__scroll-indicator {
+  position: absolute;
+  bottom: var(--spacing-md);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 4;
+  color: var(--color-beige-light);
+}
+
+.scroll-indicator__line {
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--color-gold-antique), transparent);
+  animation: scrollPulse 2s infinite;
+}
+
+.scroll-indicator__text {
+  font-size: 12px;
+  font-family: var(--font-heading);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@keyframes scrollPulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(8px);
+  }
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+/* Tablets (768px - 968px) */
+@media (max-width: 968px) {
+  .hero__main-text {
+    white-space: normal;
+    max-width: 80%;
+  }
+
+  .hero__description {
+    max-width: 400px;
+  }
+
+  .hero__trust-badge {
+    min-width: 200px;
+    padding: 20px 24px;
+  }
+
+  .trust-badge__rating {
+    font-size: 28px;
+  }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero__main-text {
+    white-space: normal;
+    max-width: 90%;
+    padding: 0 var(--spacing-md);
+  }
+
+  .hero__corner-left,
+  .hero__corner-right {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .hero__description {
+    position: static;
+    max-width: 100%;
+    padding: 0 var(--spacing-md);
+    margin-top: auto;
+    padding-top: 60vh;
+  }
+
+  .hero__trust-badge {
+    position: static;
+    margin: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+    min-width: auto;
+    padding: 20px;
+  }
+
+  .trust-badge__rating {
+    font-size: 24px;
+  }
+
+  .trust-badge__text {
+    font-size: 14px;
+  }
+
+  /* Stack content vertically on mobile */
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Extra small mobile (below 480px) */
+@media (max-width: 480px) {
+  .hero__corner-left,
+  .hero__corner-right {
+    font-size: 10px;
+  }
+
+  .hero__description {
+    font-size: 15px;
+  }
+}
