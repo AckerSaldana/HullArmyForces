@@ -47,7 +47,7 @@ export class Navigation {
     const currentScrollPosition = window.scrollY;
     const showNavbarThreshold = 200; // Show navbar with background only after 200px
 
-    // Handle scroll indicator visibility
+    // Handle scroll indicator visibility (works on both desktop and mobile)
     if (this.scrollIndicator) {
       if (currentScrollPosition < 50) {
         // At very top - show scroll indicator

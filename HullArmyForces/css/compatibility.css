@@ -396,6 +396,18 @@
     .stat-label {
         font-size: 12px;
     }
+
+    .scroll-indicator {
+        bottom: var(--spacing-sm);
+    }
+
+    .scroll-line {
+        height: 32px;
+    }
+
+    .scroll-text {
+        font-size: 11px;
+    }
 }
 
 .scroll-indicator {
